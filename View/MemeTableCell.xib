@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MemeTableViewCell" customModule="MemeMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYa-OI-upE">
+                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="ZS5-9d-z4g"/>
+                        <constraint firstAttribute="height" constant="90" id="eUu-ZJ-BeV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbM-Bt-GMp">
+                    <rect key="frame" x="105" y="41" width="306" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tYa-OI-upE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5NY-WI-RgV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NbM-Bt-GMp" secondAttribute="trailing" constant="20" id="Ax2-vh-QU1"/>
+                <constraint firstItem="tYa-OI-upE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D4B-52-kdM"/>
+                <constraint firstItem="NbM-Bt-GMp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WJP-Kq-gAs"/>
+                <constraint firstItem="NbM-Bt-GMp" firstAttribute="leading" secondItem="tYa-OI-upE" secondAttribute="trailing" constant="15" id="eAA-he-3eU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="memedImageView" destination="tYa-OI-upE" id="1xU-YB-JGi"/>
+                <outlet property="sentMemeLable" destination="NbM-Bt-GMp" id="Qlb-Wo-QGZ"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="2559.2203898050975"/>
+        </view>
+    </objects>
+</document>
